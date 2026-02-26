@@ -12,32 +12,32 @@ export default function Testimonials() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: 'Priya Sharma',
+      name: 'Yana Sharma',
       review: 'Astromindly helped me understand the real reasons behind my career struggles. The combination of psychological insights and astrological timing gave me clarity I never had before. Highly recommended!'
     },
     {
       id: 2,
-      name: 'Rajesh Kumar',
+      name: 'Divyansh',
       review: 'I was skeptical at first, but the approach here is so different. They don\'t just tell you what you want to hear - they help you understand yourself better. My relationship issues are finally making sense.'
     },
     {
       id: 3,
-      name: 'Anita Desai',
+      name: 'Pavini',
       review: 'The best part about Astromindly is that they consider both psychological patterns and astrological influences. It\'s not just about planets or just about therapy - it\'s about real clarity.'
     },
     {
       id: 4,
-      name: 'Vikram Singh',
+      name: 'Mary Kurien',
       review: 'I\'ve tried many astrologers before, but none gave me actionable advice like Astromindly. They helped me understand my financial patterns and timing, and I\'ve seen real improvements.'
     },
     {
       id: 5,
-      name: 'Meera Patel',
+      name: 'Chaitanya Gulati',
       review: 'As someone who values logic and practicality, I was surprised by how much sense the guidance made. They don\'t sell fear - they provide understanding. My health concerns are now clearer.'
     },
     {
       id: 6,
-      name: 'Arjun Nair',
+      name: 'Gazal Arora',
       review: 'The experts at Astromindly truly listen before analyzing. They helped me understand my personality patterns and life purpose in a way that felt authentic and empowering. Thank you!'
     }
   ]
