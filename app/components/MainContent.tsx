@@ -30,13 +30,22 @@ export default function MainContent() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    try {
+      await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'get-started',
+          ...formData,
+        }),
+      })
+    } catch (error) {
+      console.error('Error submitting lead', error)
+    }
 
-    // Store form data in sessionStorage to pass to thank you page
     sessionStorage.setItem('formData', JSON.stringify(formData))
-
-    // Redirect to thank you page
     router.push('/thank-you')
   }
 

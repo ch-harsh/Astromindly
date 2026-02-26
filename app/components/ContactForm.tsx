@@ -13,7 +13,21 @@ export default function ContactForm() {
     if (!comment.trim()) return
     setIsSubmitting(true)
 
-    await new Promise(resolve => setTimeout(resolve, 800))
+    try {
+      await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'contact-comment',
+          comment: comment.trim(),
+        }),
+      })
+    } catch (error) {
+      console.error('Error submitting comment', error)
+    }
+
     sessionStorage.setItem('submittedComment', JSON.stringify({ comment: comment.trim() }))
     router.push('/thank-you')
   }
