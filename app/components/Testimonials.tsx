@@ -22,7 +22,7 @@ export default function Testimonials() {
     },
     {
       id: 3,
-      name: 'Pavini Jain',
+      name: 'Pavini',
       review: 'The best part about Astromindly is that they consider both psychological patterns and astrological influences. It\'s not just about planets or just about therapy - it\'s about real clarity.'
     },
     {
