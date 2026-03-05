@@ -39,6 +39,8 @@ export default function MainContent() {
         body: JSON.stringify({
           source: 'get-started',
           ...formData,
+          pageUrl: window.location.href,
+          referrer: document.referrer || null,
         }),
       })
     } catch (error) {

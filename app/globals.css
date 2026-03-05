@@ -9,12 +9,12 @@ html {
 }
 
 :root {
-  /* Modern, warm color palette */
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-light: #818cf8;
-  --secondary: #ec4899;
-  --accent: #f59e0b;
+  /* AstroMindly brand palette (from logo) */
+  --primary: #5b3cf6;        /* deep violet */
+  --primary-dark: #3b2bb4;   /* darker violet */
+  --primary-light: #8a6eff;  /* lighter violet */
+  --secondary: #18a8ff;      /* bright cyan-blue */
+  --accent: #ff5da2;         /* pink accent */
   --success: #10b981;
   
   /* Neutral colors */
@@ -114,9 +114,9 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background: #e5e7eb;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-primary);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--gray-200);
   z-index: 100;
   padding: 1rem 0;
@@ -139,6 +139,7 @@ body {
   align-items: center;
   text-decoration: none;
   transition: transform 0.2s ease;
+  gap: 0.5rem;
 }
 
 .logo-container:hover {
@@ -146,13 +147,56 @@ body {
 }
 
 .logo-text {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 800;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
+}
+
+.brand-logo {
+  border-radius: 16px;
+  /* box-shadow: var(--shadow-sm); */
+  background: transparent;
+}
+
+.mobile-menu-button {
+  display: none;
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-button:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.kebab {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kebab span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .nav-links {
@@ -209,8 +253,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(3px);
   -webkit-filter: blur(3px);
+  filter: blur(3px);
   z-index: 0;
   transform: scale(1.02);
 }
@@ -270,8 +314,8 @@ body {
 
 .hero-form {
   background: #e5e7eb;
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   padding: 2rem;
   border-radius: 16px;
   box-shadow: var(--shadow-xl);
@@ -1280,13 +1324,57 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links {
-    gap: 1rem;
-    font-size: 0.875rem;
+  .mobile-menu-button {
+    display: inline-flex;
+  }
+
+  .desktop-nav {
+    display: none;
   }
 
   .logo-text {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+  }
+
+  .brand-logo {
+    width: 68px;
+    height: 48px;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    border: 2px solid var(--gray-200);
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: max-height 0.25s ease, opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .mobile-menu.open {
+    max-height: 280px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 0.85rem 0.9rem;
+    border-radius: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .mobile-menu a:hover {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(236, 72, 153, 0.08) 100%);
+    color: var(--primary);
   }
 
   .hero-wrapper {

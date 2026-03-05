@@ -9,28 +9,30 @@ interface Expert {
 export default function Experts() {
   const experts: Expert[] = [
     {
-      name: 'Dr. Sarah Johnson',
-      profession: 'Astro-Psychologist',
-      experience: '15+ Years',
+      name: 'Dr. Ekta',
+      profession: 'Philosophical Psychologist | Life Coach',
+      experience: '10+ Years',
       specialization: [
-        'Psychological Pattern Analysis',
-        'Vedic Astrology',
         'Relationship Counseling',
-        'Career Guidance'
+        'Karmic Relationship Patterns',
+        'Life Coaching & Personal Growth',
+        'Health & Well-being Guidance',
+        'Emotional Clarity & Self Awareness'
       ],
-      bio: 'Dr. Sarah combines her deep understanding of psychology with traditional astrological wisdom to provide holistic life guidance. She specializes in helping individuals understand the psychological patterns that influence their life decisions.'
+      bio: 'Dr. Ekta combines her deep academic background in philosophy with a strong understanding of human psychology to help individuals explore the deeper meaning behind their thoughts, emotions, and life choices. With a PhD in Philosophy, she focuses on guiding people through self-reflection, emotional awareness, and conscious decision-making. At Astromindly, Dr. Ekta works with individuals facing challenges related to relationship counselling, life direction, emotional confusion, and personal growth.'
     },
     {
-      name: 'Prof. Michael Chen',
-      profession: 'Astrological Consultant & Life Coach',
-      experience: '20+ Years',
+      name: 'Dipti Jain',
+      profession: 'Astrologer | Palmistry Expert | Vastu Consultant',
+      experience: '12+ Years',
       specialization: [
-        'Transit Analysis',
-        'Karmic Cycles',
-        'Financial Astrology',
-        'Health & Well-being'
+        'Vedic Astrology Consultation',
+        'Palmistry Insights',
+        'Vastu Shastra Consultation',
+        'Transit & Timing Analysis',
+        'Numerology Guidance'
       ],
-      bio: 'With over two decades of experience, Prof. Michael helps clients navigate life transitions by understanding both astrological timing and personal growth patterns. His approach emphasizes practical action over passive prediction.'
+      bio: 'Dipti Jain is a highly experienced astrology consultant with expertise in Vedic astrology, numerology, palmistry, and Vastu Shastra. Her consultations focus on analyzing planetary transits, numerological patterns, palm lines, and Vastu energies to provide practical guidance related to career growth, financial stability, relationships, and personal development. At Astromindly, she helps clients understand the best timing for career changes, marriage decisions, financial planning, and personal growth.'
     }
   ]
 

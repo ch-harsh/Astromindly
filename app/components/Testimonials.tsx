@@ -12,33 +12,33 @@ export default function Testimonials() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: 'Yana Sharma',
-      review: 'Astromindly helped me understand the real reasons behind my career struggles. The combination of psychological insights and astrological timing gave me clarity I never had before. Highly recommended!'
+      name: 'Divyansh Dhingra',
+      review: 'I had a really insightful session with Dr. Ekta at Astromindly. We discussed my career confusion, relationship patterns, and the attachment fear I have been struggling with for a long time. Instead of just giving predictions, she helped me understand why I feel the way I do and what I can work on. The session gave me a lot of clarity and calmness.'
     },
     {
       id: 2,
-      name: 'Divyansh',
-      review: 'I was skeptical at first, but the approach here is so different. They don\'t just tell you what you want to hear - they help you understand yourself better. My relationship issues are finally making sense.'
+      name: 'Pavini',
+      review: 'I consulted Astrologist Dipti regarding whether it was the right time to change my job. She carefully analyzed my chart and explained the planetary timing in a very practical way. Her guidance helped me understand that waiting for a few months could actually work better for me. The consultation felt very honest and grounded.'
     },
     {
       id: 3,
-      name: 'Pavini',
-      review: 'The best part about Astromindly is that they consider both psychological patterns and astrological influences. It\'s not just about planets or just about therapy - it\'s about real clarity.'
+      name: 'Yana Sharma',
+      review: 'I received a full life report from Astromindly and later had a session with one of their senior counsellors to discuss it in detail. The report itself was very detailed, but the session helped me interpret it better and apply the insights to my real-life situations. It felt more like a guidance session than a typical astrology consultation.'
     },
     {
       id: 4,
       name: 'Mary Kurien',
-      review: 'I\'ve tried many astrologers before, but none gave me actionable advice like Astromindly. They helped me understand my financial patterns and timing, and I\'ve seen real improvements.'
+      review: 'I opted for the complete report and a follow-up session with a senior counsellor, and I must say the experience was very thoughtful and professional.'
     },
     {
       id: 5,
       name: 'Chaitanya Gulati',
-      review: 'As someone who values logic and practicality, I was surprised by how much sense the guidance made. They don\'t sell fear - they provide understanding. My health concerns are now clearer.'
+      review: 'I ordered the three-question report where I asked about my career direction, relationship concerns, and some financial worries. Later I also booked a session with one of the senior counsellors to understand the report more deeply. The conversation helped me see some repeating patterns in my decisions and how timing could affect my plans.'
     },
     {
       id: 6,
       name: 'Gazal Arora',
-      review: 'The experts at Astromindly truly listen before analyzing. They helped me understand my personality patterns and life purpose in a way that felt authentic and empowering. Thank you!'
+      review: 'I initially booked a session with Dr. Ekta to talk about my fears around marriage and emotional readiness. She helped me understand some of my internal patterns and gave very thoughtful advice. After that, I also consulted Astrologist Dipti to understand the astrological timing related to marriage. Both sessions complemented each other really well, and I felt much more confident and clear afterward.'
     }
   ]
 

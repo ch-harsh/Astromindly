@@ -22,6 +22,8 @@ export default function ContactForm() {
         body: JSON.stringify({
           source: 'contact-comment',
           comment: comment.trim(),
+          pageUrl: window.location.href,
+          referrer: document.referrer || null,
         }),
       })
     } catch (error) {
